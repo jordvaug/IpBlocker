@@ -1,0 +1,57 @@
+{
+  "name": "ipblocker",
+  "version": "1.0.0",
+  "description": "Nodejs service that can be used to search an IP address against a list of blocked adresses.",
+  "main": "app.js",
+  "scripts": {
+    "start": "tsc && node --unhandled-rejections=strict ./dist/app.js",
+    "test": "mocha -r ./register.js 'tests/**/*.test.ts'",
+    "build": "npm test && tsc --project ./",
+    "bench": "node ./benchmarks/benchmark.js > ./benchmarks/output-run && nanobench-compare ./benchmarks/output-benchmark ./benchmarks/output-run"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/auth0-interviews/ext-jordan-vaughn-exercise.git"
+  },
+  "keywords": [
+    "nodejs",
+    "express",
+    "api",
+    "ip"
+  ],
+  "author": "Jordan Vaughn",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/auth0-interviews/ext-jordan-vaughn-exercise/issues"
+  },
+  "homepage": "https://github.com/auth0-interviews/ext-jordan-vaughn-exercise#readme",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "express-validator": "^6.12.1",
+    "helmet": "^4.6.0",
+    "ip-cidr": "^3.0.4",
+    "is-cidr": "^4.0.2",
+    "is-ip": "^3.1.0"
+  },
+  "devDependencies": {
+    "@types/chai": "^4.2.21",
+    "@types/cors": "^2.8.12",
+    "@types/express": "^4.17.13",
+    "@types/node": "^16.6.1",
+    "@typescript-eslint/eslint-plugin": "^4.29.2",
+    "@typescript-eslint/parser": "^4.29.2",
+    "chai": "^4.3.4",
+    "eslint": "^7.32.0",
+    "eslint-config-standard": "^16.0.3",
+    "eslint-plugin-import": "^2.24.1",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^5.1.0",
+    "mocha": "^9.0.3",
+    "nanobench": "^2.1.1",
+    "ts-node": "^10.2.0",
+    "typescript": "^4.3.5"
+  }
+}

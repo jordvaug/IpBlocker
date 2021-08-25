@@ -1,0 +1,25 @@
+{
+    "extends": "../tsconfig.json",
+    "compilerOptions": {
+      "baseUrl": "./",
+      "target": "es2015",
+      "module": "commonjs",
+      "experimentalDecorators": true,
+      "strictPropertyInitialization": false,
+      "allowSyntheticDefaultImports": true,
+      "isolatedModules": false,
+      "strict": false,
+      "noImplicitAny": false,
+      "lib": ["es2017"],
+      "resolveJsonModule": true,
+      "typeRoots" : [
+        "../node_modules/@types"
+      ]
+    },
+    "exclude": [
+      "../node_modules"
+    ],
+    "include": [
+      "./**/*.ts"
+    ]
+  }

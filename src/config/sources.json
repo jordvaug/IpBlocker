@@ -1,0 +1,8 @@
+{
+    "uriList": [
+                "https://github.com/firehol/blocklist-ipsets/raw/master/firehol_level1.netset",
+                "https://github.com/firehol/blocklist-ipsets/raw/master/firehol_level2.netset",
+                "https://github.com/firehol/blocklist-ipsets/raw/master/firehol_level3.netset",
+                "https://github.com/firehol/blocklist-ipsets/raw/master/firehol_level4.netset"
+            ]
+}

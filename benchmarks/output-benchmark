@@ -1,0 +1,8 @@
+NANOBENCH version 2
+> C:\Program Files\nodejs\node.exe benchmarks\benchmark.js
+
+# IpCheck 2000 times
+ok ~12 s (12 s + 61338300 ns)
+
+all benchmarks completed
+ok ~12 s (12 s + 61338300 ns)
