@@ -23,13 +23,13 @@ export class IpRoutes extends CommonRoutesConfig {
   }
 
   configureRoutes () {
-    this.app.route('/checkip')
-      .post(body('ip').custom(isValidIp), (req: express.Request, res: express.Response) => {
+    this.app.route('/:ip')
+      .get(body('ip').custom(isValidIp), (req: express.Request, res: express.Response) => {
         const errors = validationResult(req)
         if (!errors.isEmpty()) {
           res.status(400).send(errors.array())
         } else {
-          const ip = req.body.ip
+          const ip = req.params.ip
           console.time('Check IP')
           const source = CheckIpListService.CheckIp(ip)
           console.timeEnd('Check IP')

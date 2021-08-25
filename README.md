@@ -18,9 +18,10 @@ You will first need to create a .env file in the root directory and populate it 
 
 To start querying the API, start the application, and use curl:
 
-curl --location --request POST 'http://localhost:5000/checkip' \
+curl --location --request GET 'http://localhost:3000/0.0.0.0' \
 --header 'Content-Type: application/x-www-form-urlencoded' \
---data-urlencode 'ip=24.137.16.1'
+--data-urlencode 'ip=0.0.0.0'
+
 
 ### Benchmark Testing
     Benchmark testing can be run against a running API with: 
